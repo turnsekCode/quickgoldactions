@@ -1,4 +1,4 @@
-import Cabecera from "../cabecera/cabecera";
+import Cabecera from "../cabecera/Cabecera";
 import Footer from "../footer/Footer";
 
 export default function Layout({ children }) {
