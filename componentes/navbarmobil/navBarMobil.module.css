@@ -3,7 +3,6 @@
 }
 
 /*estilos del menu abierto*/
-
 .contenedorMenu{
     background-color: #00485b;
     width: 100%;
@@ -105,4 +104,10 @@
     right: 5px;
     font-size: 30px;
     border-left: 1px solid #fff;
+}
+
+@media (min-width: 800px) {
+    .abrirMenu {
+        display: none;
+    }
 }

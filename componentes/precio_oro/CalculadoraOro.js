@@ -109,7 +109,7 @@ const CalculadoraOro = ({ data }) => {
                   <div className={precioOro.calculadora_der}>
                     <div className={precioOro.precio_total}>
                       {inputUsuario < 100
-                        ? inputUsuario * 35.11
+                        ? inputUsuario * precio18k.toFixed(2)
                         : inputUsuario * 35.46 || inputUsuario}
                       €
                     </div>

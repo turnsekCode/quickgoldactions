@@ -16,7 +16,7 @@ const Comprar = ({ dataDivisa, data }) => {
   const refOption = useRef();
   const [addClase, setAddClase] = useState(null);
   const [addClase2, setAddClase2] = useState(null);
-  console.log(dataReverse);
+
   const captureSelect = (e) => {
     setTipoCambio(true);
     setValorMoneda(e.target.value); //funcion que coge el valor del select
@@ -28,7 +28,6 @@ const Comprar = ({ dataDivisa, data }) => {
   //console.log("posicion", addClase);
   const cambioValor = (monedaPais, i) => {
     refSelect.current.value = monedaPais.Productos[0].Precio;
-
     //const addClases = (refHabitual.current.id = monedaPais.Productos[0]?.Id);
     setAddClase(i);
     captureSelect({
@@ -53,21 +52,6 @@ const Comprar = ({ dataDivisa, data }) => {
       currency.Name === "CLP"
     );
   });
-
-  /*const calcularCambio = (event) => {
-    const { id, value: valor } = event.target;
-    let cambio = 0;
-
-    if (id === "input-izquierdo") {
-      // si cambia el input izquierdo, calcula el derecho
-      cambio = valor * valorInput;
-      refInput2.current.value = cambio.toFixed(4);
-    } else {
-      // si cambia el input derecho, calcula el izquierdo
-      cambio = valor / valorInput;
-      refInput1.current.value = cambio.toFixed(4);
-    }
-  };*/
 
   const calcularCambio = (event) => {
     const { id, value: valor } = event.target;
@@ -163,7 +147,7 @@ const Comprar = ({ dataDivisa, data }) => {
                       type="text"
                       className={precioDivisa.inputA}
                       pattern="[0-9]*"
-                      placeholder="cantidad"
+                      placeholder="Cantidad"
                       inputMode="numeric"
                       onChange={calcularCambio}
                     />
