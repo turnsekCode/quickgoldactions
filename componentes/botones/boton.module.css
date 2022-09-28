@@ -17,26 +17,6 @@
     text-align: center;
     font-size: 13px;
 }
-/*.mas_precios_oro a:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left: 8px;
-}
-.mas_precios_oro a:hover:after {
-    opacity: 1;
-    right: 10px;
-}
-.mas_precios_oro a:after {
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: -5px;
-    right: -20px;
-    transition: 0.4s;
-}*/
-
 .calculadora_oro  {
     min-width: 110px;
     color: #fff;
@@ -54,26 +34,6 @@
     text-align: center;
     font-size: 13px;
 }
-/*.calculadora_oro a:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left: 8px;
-}
-.calculadora_oro a:hover:after {
-    opacity: 1;
-    right: 10px;
-}
-.calculadora_oro a:after {
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: -5px;
-    right: -20px;
-    transition: 0.4s;
-}*/
-
 .info_oro {
     min-width: 110px;
     color: #fff;
@@ -91,22 +51,66 @@
     text-align: center;
     font-size: 13px;
 }
-/*.info_oro a:hover {
+
+@media (min-width: 800px) {
+.mas_precios_oro {
+    min-width: 117px;
+    }
+.info_oro:hover {
     border-radius: 5px;
     padding-right: 24px;
     padding-left: 8px;
 }
-.info_oro a:hover:after {
+.info_oro:hover:after {
     opacity: 1;
     right: 10px;
 }
-.info_oro a:after {
+.info_oro:after {
     content: "\00BB";
     position: absolute;
     opacity: 0;
     font-size: 20px;
     line-height: 40px;
-    top: -5px;
+    top: -8.4px;
     right: -20px;
     transition: 0.4s;
-}*/
+}
+.calculadora_oro:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+.calculadora_oro:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.calculadora_oro:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: -8.4px;
+    right: -20px;
+    transition: 0.4s;
+}
+.mas_precios_oro:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+.mas_precios_oro:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.mas_precios_oro:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: -8.4px;
+    right: -20px;
+    transition: 0.4s;
+}
+}

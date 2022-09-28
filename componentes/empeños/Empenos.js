@@ -4,6 +4,8 @@ import Modal from "../modal/Modal";
 import Boton1 from "../botones/Boton1";
 import Boton2 from "../botones/Boton2";
 import Boton3 from "../botones/Boton3";
+import EmpenosEjemplo from "../empenoEjemplo/EmpenoEjemplo";
+import EmpenosInfo from "../empenoInfo/EmpenoInfo";
 
 export default function Empenos() {
   const [isOpen1, openModal1, closeModal1] = useModal(false);
@@ -31,14 +33,16 @@ export default function Empenos() {
         </div>
       </section>
       <Modal isOpen={isOpen1} closeModal={closeModal1}>
-        <div className={empeno.contenedor_modal}>modal ejemplo abierto</div>
+        <div className={empeno.contenedor_modal}>
+          <EmpenosEjemplo />
+        </div>
       </Modal>
       <Modal isOpen={isOpen2} closeModal={closeModal2}>
         <div className={empeno.contenedor_modal}>modal simulador abierto</div>
       </Modal>
       <Modal isOpen={isOpen3} closeModal={closeModal3}>
         <div className={empeno.contenedor_modal}>
-          modal info empeños abierto
+          <EmpenosInfo />
         </div>
       </Modal>
     </>
