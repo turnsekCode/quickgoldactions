@@ -1,4 +1,6 @@
 import Navbar from "../navbar/Navbar";
+import NavbarSticky from "../navbar/NavbarSticky";
+import NavbarStickyOrdenador from "../navbar/NavBarStickyOrdenador";
 import NavBarMobil from "../navbarmobil/NavbarMobil";
 import cabecera from "./cabecera.module.css";
 
@@ -11,6 +13,7 @@ export default function Cabecera() {
       <div className={cabecera.logo_cabecera}>
         <img src="../../logo.png" alt="logo quickgold" />
       </div>
+      <NavbarSticky />
       <Navbar />
       <NavBarMobil />
     </header>

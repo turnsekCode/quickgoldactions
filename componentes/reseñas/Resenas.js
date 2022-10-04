@@ -32,10 +32,11 @@ export default function Resenas() {
         <Box
           sx={{
             display: "flex",
+            justifyContent: "center",
             gap: 1,
             py: 1,
             overflow: "auto",
-            width: 343,
+            width: "100%",
             scrollSnapType: "x mandatory",
             "& > *": {
               scrollSnapAlign: "center",

@@ -38,4 +38,7 @@
     .contenedor_cabecera{
         position: relative;
     }
+    .breadcrumbs {
+        display: none;
+    }
 }
