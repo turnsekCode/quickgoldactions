@@ -28,7 +28,7 @@ export default function Home({ dataIdWp }) {
         <article className={index.servicios}>
           <header className={index.cabecera_portada}>
             <h1 className={index.titulo_seccion}>
-              Especialistas en compra y venta de oro
+              Especialistas en compra y venta de oro 18
             </h1>
             <p className={index.subtitulo_pagina}>
               En nuestras tiendas{" "}
