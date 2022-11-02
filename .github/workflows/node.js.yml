@@ -8,22 +8,19 @@ on:
     branches: ["main"]
 
 jobs:
-  avoid_reduncy:
-    runs-on: self-hosted
-    steps:
-      - name: Cancel Previous redundant builds
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          access_token: ${{ github.token }}
-
   build:
-    runs-on: ubuntu-18.04
+    runs-on: self-hosted
+
     strategy:
       matrix:
         node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      - name: Cancel Previous redundant builds
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -32,4 +29,4 @@ jobs:
           cache: "npm"
       - run: npm i
       - run: npm run build --if-present
-      #- run: pm2 reload 0
+      - run: pm2 reload 0
