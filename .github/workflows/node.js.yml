@@ -8,14 +8,13 @@ on:
     branches: ["main"]
 
 jobs:
-
   avoid_reduncy:
     runs-on: self-hosted
     steps:
       - name: Cancel Previous redundant builds
         uses: styfle/cancel-workflow-action@0.9.1
-          with:
-            access_token: ${{ github.token }}
+        with:
+          access_token: ${{ github.token }}
 
   build:
     runs-on: ubuntu-18.04
