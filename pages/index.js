@@ -1,7 +1,7 @@
+/* eslint-disable no-use-before-define */
 import Head from "next/head";
 import index from "./index.module.css";
 import React from "react";
-import Contenedor from "../componentes/contenedor/Contenedor";
 import { SelectPrecioOro } from "../componentes/SelectPrecioOro/SelectPrecioOro";
 import Link from "next/link";
 
