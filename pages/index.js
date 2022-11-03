@@ -36,6 +36,14 @@ export default function Home({ dataIdWp }) {
             </p>
           </header>
         </article>
+        <div className={index.contenedor_iframe}>
+          <iframe
+            src="https://www.google.com/search?q=dolar+cotizacion&igu=1&source=hp&ei=0thjY9nGHtKKur4Pz4ieuAk&iflsig=AJiK0e8AAAAAY2Pm4mguI7sumXHK4Mj2KMRumz8q6yBD&ved=0ahUKEwjZ98fZpJL7AhVShc4BHU-EB5cQ4dUDCAo&uact=5&oq=dolar+cotizacion&gs_lp=Egdnd3Mtd2l6uAED-AEBMg8QABixAxiDARhDGEYYggIyBBAAGEMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABMICBBAjGCfCAgsQABiABBixAxiDAcICCRAAGEMYRhiCAsICChAAGLEDGIMBGEPCAgcQABixAxhDwgIIEAAYsQMYgwHCAggQABiABBixA8ICCBAAGIAEGMsBSMkoUABYjCNwAHgAyAEAkAEAmAF5oAG3DaoBBDMuMTM&sclient=gws-wiz"
+            name="myIFrame"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
         <section className={index.compro_oro}>
           <div className={index.bloque_izq_serv}>
             <h2>Vender oro</h2>

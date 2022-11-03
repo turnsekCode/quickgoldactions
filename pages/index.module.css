@@ -212,3 +212,21 @@
     color: #3b8dbd;
     background: url(https://quickgold.es/wp-content/themes/quickgold-child/img/flecha-masinfo.png) no-repeat center right rgba(255, 255, 255, .7);
 }
+
+
+.contenedor_iframe iframe {
+    width: 100%;
+    height: 630px;
+}
+
+@media (min-width: 800px) {
+    .contenedor_iframe {
+        position: relative;
+        height: 40%;
+    }
+
+    .contenedor_iframe iframe {
+        width: 40%;
+        height: 630px;
+    }
+}
